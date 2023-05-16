@@ -20,11 +20,11 @@ const server = http.createServer((req, res)=>{
     
     console.log("url:",url);
 
-    if(method="GET"){                   
+    if(method=="GET"){                   
         switch(url){
             case "/index":
             case "/":
-                        send(res, "index.html");
+                        send(res, "/index.html");
                         break;
             
             case "/stopwatch":
